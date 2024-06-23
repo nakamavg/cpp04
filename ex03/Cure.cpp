@@ -19,8 +19,7 @@ Cure::~Cure() {
 }
 
 AMateria* Cure::clone() const {
-	AMateria *c = new Cure();
-	return (c);
+return (new Cure(*this));
 }
 
 void Cure::use(ICharacter& target) {
